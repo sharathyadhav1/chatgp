@@ -18,6 +18,10 @@ class OnGenerateRoute{
           widget: TextCompletionPage()
         );
       }
+      default:
+        return materialBuilder(
+          widget: ErrorPage(),
+        );
     }
   }
 }
