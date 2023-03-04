@@ -26,7 +26,7 @@ class TextCompletionLoaded extends TextCompletionState {
 class TextCompletionFailure extends TextCompletionState {
   final String? errorMessage;
 
- TextCompletionFailure({required this.errorMessage})
+ TextCompletionFailure({required this.errorMessage});
   @override
   List<Object> get props => [];
 }
