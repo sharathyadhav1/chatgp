@@ -39,6 +39,7 @@ class ErrorPage extends StatelessWidget {
           child: Text("error"),
         )
     );
+
   }
 }
 
