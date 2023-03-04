@@ -10,40 +10,37 @@ import 'features/app/routes/on_generate_route.dart';
 import 'features/core/http_certificate_maneger.dart';
 import 'injection_container.dart' as di;
 
-
-void main() async {
-
+void main()async {
   WidgetsFlutterBinding.ensureInitialized();
   HttpOverrides.global = new MyHttpOverrides();
   await di.init();
-
   runApp(MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
         BlocProvider<TextCompletionCubit>(
           create: (_) => di.sl<TextCompletionCubit>(),
-        )
+        ),
+
       ],
-      child:MaterialApp(title: 'Text ChatGPT',
-      debugShowCheckedModeBanner: false,
-      onGenerateRoute: OnGenerateRoute.route,
-      theme:ThemeData(brightness: Brightness.dark),
-      initialRoute: '/',
-      routes: {
-        "/":(context){
-          return SplashScreen(
-            child: HomePage(),
-          );
-        }
-      }
-      );
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'ChatGPT',
+        onGenerateRoute: OnGenerateRoute.route,
+        theme: ThemeData(brightness: Brightness.dark),
+        initialRoute: '/',
+        routes: {
+          "/": (context) {
+            return SplashScreen(
+              child: HomePage(),
+            );
+          }
+        },
+      ),
     );
   }
 }

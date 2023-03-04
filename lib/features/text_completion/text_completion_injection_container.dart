@@ -5,7 +5,7 @@
 import 'package:chatgp/features/text_completion/domain/repositories/test_search_repository.dart';
 import 'package:chatgp/features/text_completion/presentation/cubit/text_completion_cubit.dart';
 
-import '../injection_container.dart';
+import '../../injection_container.dart';
 import 'data/remote_data_source/text_completion_remote_data_source.dart';
 import 'data/remote_data_source/text_completion_remote_data_source_impl.dart';
 import 'data/repositories/text_completion_repository_impl.dart';
