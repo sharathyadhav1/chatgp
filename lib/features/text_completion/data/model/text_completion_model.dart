@@ -1,6 +1,6 @@
 
 
-import 'package:flutter_chatgpt/features/text_completion/data/model/text_completion_data.dart';
+import 'package:chatgp/features/text_completion/data/model/text_completion_data.dart';
 
 class TextCompletionModel {
   final num created;

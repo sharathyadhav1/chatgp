@@ -1,5 +1,7 @@
+import 'package:chatgp/features/text_completion/data/model/text_completion_model.dart';
+
 abstract class TextSearchRepository{
 
 
-  Future<TextModel> getTextCompletion(String query)
+  Future<TextCompletionModel> getTextCompletion(String query);
 }
