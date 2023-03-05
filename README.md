@@ -21,6 +21,21 @@ We have used the http package to fetch data from the API and the flutter_bloc pa
 
 he project has been developed using the Dart programming language and Flutter framework. We have used various libraries and packages such as http, flutter_bloc, rxdart, and equatable to create a robust and scalable application.
 
+Libraris used for the for the project
+dependencies:
+flutter:
+sdk: flutter
+flutter_bloc: ^8.0.0 - state management 
+equatable: ^2.0.3- state management and viemodel
+http: ^0.13.5 - for Api calls
+get_it: ^7.2.0- dependencu injection - Classes used with container 
+flutter_staggered_grid_view: ^0.6.1 - essentially not needed for future purpose
+cached_network_image: 3.2.3 - for future
+share_plus: ^6.3.0 - share the text as
+shimmer: ^2.0.0 - for future
+
+
+
 
 A few resources to get you started if this is your first Flutter project:
 
